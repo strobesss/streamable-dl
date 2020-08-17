@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name":"streamable-dl",
+  "version":"1.0",
+
+  "description": "Adds a download link for streamable videos.",
+
+  "icons": {
+    "48": "icons/dl-48.png",
+    "96": "icons/dl-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://streamable.com/*"],
+      "js": ["streamable-dl.js"]
+    }
+  ]
+
+}
